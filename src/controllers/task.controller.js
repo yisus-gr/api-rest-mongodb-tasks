@@ -30,7 +30,7 @@ export const findAllTasks = async (req, res) => {
 }
 
 export const createTask = async (req, res) => {
-    if (!req.body.name) {
+    if (!req.body.title) {
         return res.status(400).send({ message: 'Content cannot be empty' });
     }
 
